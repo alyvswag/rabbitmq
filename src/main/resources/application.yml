@@ -1,0 +1,23 @@
+spring :
+  main:
+    allow-bean-definition-overriding: true
+  application:
+    name: RabbitMQ
+  mail:
+    host: smtp.gmail.com
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    #            todo: elave et pass ve username
+    username: # oz sexsi gmailivi elave et
+    password: # gmailivi two factor ele ve 16 reqemli giris acari yaradaraq bura yaz
+    port: 587
+
+  rabbitmq:
+      host: localhost
+      port: 5672
+      username: guest
+      password: guest
